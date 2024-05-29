@@ -1,0 +1,219 @@
+
+.loader{
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  height: 100%;
+ background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  display: none;
+}
+.note-loading{
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  z-index: 9999;
+}
+.note-loading p{
+  color: white;
+  font-weight: bolder;
+}
+
+
+
+
+.chat-main{
+          background-color: #fff;
+          box-shadow: 14px 17px 40px 4px rgba(112,144,176,.08);
+          border-radius: 30px;
+          padding: 20px;
+          height: 77.9vh;
+          background-image: url(../images/bg/bg-chat.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          display: flex;
+          /* align-items: center; */
+          text-align: center;
+}
+
+#upload-form{
+          padding: 20px;
+          display: none;
+          /* width: 70%; */
+
+}
+.showInput{
+          text-align: center;
+}
+.question-container{
+          display: block;
+}
+.job{
+          border: 2px solid #7D25EC;
+          width: 60%;
+          margin: 30px auto;
+          background-color: transparent;
+          border-radius: 10px;
+          padding: 10px;
+
+}
+.hidden-input {
+          display: none;
+        }
+        #showInput{
+          color: white;
+          cursor: pointer;
+          padding: 5px;
+          width: 50%;
+          text-align: center;
+          border-radius: 10px;
+          background-color: #7D25EC;
+          box-shadow: 14px 17px 40px 4px rgba(112,144,176,.08);
+          margin: auto;
+
+        }
+        .btns button{
+          background-color: #7D25EC;
+          color: white;
+          border-radius: 10px;
+          border: none;
+          width: 40%;
+          padding: 5px 10px;
+        }
+      
+        #timer{
+          position: absolute;
+          right: 5%;
+          top: 23%;
+          padding: 5px 10px;
+          background-color: #7D25EC;
+          color: white;
+          border-radius: 10px;
+          border: none;
+        }
+        #time-left{
+          font-weight: bolder;
+        }
+        #recordbtn{
+          padding: 5px 10px;
+          background-color: #7D25EC;
+          color: white;
+          border-radius: 10px;
+          border: none;
+        }
+        #generated-text{
+          border: 2px solid #7D25EC;
+          width: 60%;
+          margin: 10px auto;
+          background-color: transparent;
+          border-radius: 10px;
+          padding: 10px;
+        }
+        #submit-answer{
+          position: absolute;
+          padding: 20px 10px;
+          bottom: 16%;
+          right: 10%;
+          background-color: #7D25EC;
+          color: white;
+          border-radius: 30px;
+          border: none; 
+        }
+
+        @media screen and (max-width: 768px)   {
+         
+          .job{
+                    border: 2px solid #7D25EC;
+                    width: 100%;
+                    margin: 30px auto;
+                    background-color: transparent;
+                    border-radius: 10px;
+                    padding: 10px;
+          }
+          #showInput{
+                    color: white;
+                    cursor: pointer;
+                    padding: 5px;
+                    width: 100%;
+                  }
+                  .btns button{
+                    background-color: #7D25EC;
+                    color: white;
+                    border-radius: 10px;
+                    border: none;
+                    width: 100%;
+                    padding: 5px 10px;
+                  }
+                  #timer{
+                    position: absolute;
+                    right: 10%;
+                    top: 15%;
+                    padding: 5px 10px;
+                    background-color: #7D25EC;
+                    color: white;
+                    border-radius: 10px;
+                    border: none;
+                  }
+                  #submit-answer{
+                    position: absolute;
+                    padding: 15px 10px;
+                    bottom: 8%;
+                    right: 10%;
+                    background-color: #7D25EC;
+                    color: white;
+                    border-radius: 30px;
+                    border: none; 
+                  }
+                  #generated-text{
+                    border: 2px solid #7D25EC;
+                    width: 100%;
+                    margin: 10px auto;
+                    background-color: transparent;
+                    border-radius: 10px;
+                    padding: 10px;
+                  }
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

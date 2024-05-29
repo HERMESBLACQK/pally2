@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="html template">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Asad">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PallyBot Mockup AI for Interviews</title>
+
+
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/css/chat.css">
+    <link rel="stylesheet" href="assets/css/all.min.css"> 
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"> 
+    <link rel="stylesheet" href="assets/css/meanmenu.css"> 
+    <link rel="stylesheet" href="assets/css/magnific-popup.css"> 
+    <link rel="stylesheet" href="assets/css/nice-select.css"> 
+    <link rel="stylesheet" href="assets/css/backtotop.css"> 
+    <link rel="stylesheet" href="assets/css/main.css"> 
+
+  </head>
+  <style>
+      .load {
+                              position: absolute;
+                              top: 50%;
+                              left: 50%;
+                              transform: translate(-50%, -50%);
+                              width: 100px;
+                              height: 100px;
+                    }
+                    .load hr {
+                              border: 0;
+                              margin: 0;
+                              width: 40%;
+                              height: 40%;
+                              position: absolute;
+                              border-radius: 50%;
+                              animation: spin 2s ease infinite;
+                    }
+                    .load :first-child {
+                              background: #19A68C;
+                              animation-delay: -1.5s;
+                    }
+                    .load :nth-child(2) {
+                              background: #F63D3A;
+                              animation-delay: -1s;
+                    }
+                    .load :nth-child(3) {
+                              background: #FDA543;
+                              animation-delay: -0.5s;
+                    }
+                    .load :nth-child(4) {
+                              background: #193B48;
+                    }
+                @keyframes spin {
+                    0%, 100%{
+                              transform: translate(0)
+                    }
+                    25%{
+                              transform: translate(160%);
+                    }
+                    50%{
+                              transform: translate(160%, 160%);
+                    }
+                    75%{
+                              transform: translate(0, 160%);
+                    }
+                }
+  </style>
+  <body>
+
+    <!-- Cursor start -->
+    <div class="rts-cursor cursor-outer" data-default="yes" data-link="yes" data-slider="no">
+        <span class="fn-cursor"></span>
+    </div>
+    <div class="rts-cursor cursor-inner" data-default="yes" data-link="yes" data-slider="no">
+        <span class="fn-cursor">
+        <span class="fn-left"></span>
+        <span class="fn-right"></span>
+        </span>
+    </div>
+    <!-- Cursor end -->
+
+    <!-- back to top start -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+           <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- back to top end -->
+
+    <!-- modal-search-start -->
+    <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <a href="javascript:void(0)" type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">×</span>
+        </a>
+        <div class="modal-dialog" role="document">
+           <div class="modal-content">
+              <form>
+                    <input type="text" placeholder="Search here...">
+                    <button>
+                       <i class="fa fa-search"></i>
+                    </button>
+              </form>
+           </div>
+        </div>
+    </div>
+    <!-- modal-search-end -->
+  
+    </div>
+    <!-- sidebar-information-area-start -->
+    <div class="sidebar-info side-info">
+        <div class="sidebar-logo-wrapper mb-25">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-8">
+                    <div class="sidebar-logo">
+                        <a href="index-2.html"><img src="assets/images/logo/logo.png" alt="logo-img"></a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-4">
+                    <div class="sidebar-close-wrapper text-end">
+                        <button class="sidebar-close side-info-close"><i class="fal fa-times"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-menu-wrapper fix">
+            <div class="mobile-menu"></div>
+        </div>
+    </div>
+    <div class="offcanvas-overlay"></div>
+    <!-- sidebar-information-area-end -->
+
+    <div class="has-smooth" id="has_smooth"></div>
+    
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <div class="body-wrapper">
+
+                <header class="h5_header-area">
+        
+                    <div class="h5_header-bottom header-sticky">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-xl-2 col-lg-2 col-4 mb-50">
+                                    <div class="h5_header-logo">
+                                        <a href="index-2.html"><img src="assets/images/logo/logo.png" alt="Image Not Found"></a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 col-lg-6 d-none d-lg-block text-center">
+                                    <div class="h5_header-menu ">
+                                        <nav class="h5_header-nav-menu" id="mobile-menu">
+                                            <ul>
+                                                <li class="menu-has-child">
+                                                    <a href="index-2.html">Home</a>
+                                                   
+                                                </li>
+                                                <li><a href="about.html">About</a></li>
+                                                <li class="menu-has-child">
+                                                    <a href="price.html">Pricing</a>
+                                                  
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-8">
+                                    <div class="h5_header-action-wrap d-flex align-items-center justify-content-end">
+                                        <div class="h5_header-action d-none d-sm-flex">
+                                       
+                                            <a href="signup.html" class="h5_header-action-btn">
+                                                Get Started<i class="fa-light fa-angle-right"></i>                                
+                                            </a>
+                                        </div>
+                                        <div class="header-menu-bar d-lg-none ml-10">
+                                            <span class="header-menu-bar-icon side-toggle">
+                                                <i class="fa-light fa-bars"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+<main class="chat-main">
+
+          <div class="container">
+                    <div>
+              <div class="loader">
+                <div class="loading">
+                    <div class="load">
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                    </div>
+                    <div class="note-loading">
+
+                        <p>Please wait...may take up to 2 minutes</p>
+                    </div>
+                </div>
+              </div>
+                      <!-- <h1>Upload CV and Get Interview Questions</h1> -->
+                      <form id="upload-form" enctype="multipart/form-data">
+                              <div class="form-input">
+                                        <p id="showInput">Click here to upload your CV</p>
+                                        <input type="file" id="cvInput" name="cv" accept="application/pdf" class="hidden-input" required />
+                              </div>
+                              <div class="">
+                                        <textarea
+                                          name="jobDescription"
+                                          placeholder="Enter job description"
+                                              class="job"
+                                              rows="6"
+                                          required></textarea>
+                              </div>
+                          <div class="btns">
+                                    <button type="submit"> Get Questions</button>
+                          </div>
+                      </form>
+                
+                      <div id="question-section" class="question-container hidden">
+                        <h2>Questions</h2>
+                        <p id="question-text"></p>
+                       
+                        <p id="timer">Time left: <span id="time-left">60</span> seconds</p>
+                        <button id="recordbtn">Start Your Mock Interview</button>
+                        <div class="generated-text">
+                                  <p id="notification">Speak audibly and confidently.</p>
+                                  <textarea
+                                  id="generated-text"
+                                  rows="9"
+                                  placeholder="Generated text will appear here"></textarea>
+                                  <button id="submit-answer">Submit Answer</button>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="questions">
+                     
+                    </ul>
+                  </div>
+</main>
+
+
+            
+                <!-- footer area start -->
+                <!-- <footer class="h5_footer-area mt-10">
+                    <div class="h5_footer-top pt-120 pb-80">
+                        <div class="container">
+                             <div class="row justify-content-between">
+                                <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7 tp_has_fade_anim" data-fade-from="left">
+                                    <div class="h5_footer-widget mb-40">
+                                        <div class="h5_footer-logo">
+                                            <a href="index-2.html"><img src="assets/images/logo/logo.png" alt=""></a>
+                                        </div>
+                                        <!-- <p class="h5_footer-widget-text">Lorem Ipsum has been the industry's standard dummy text ever since.</p> -->
+                                        <div class="h5_footer-widget-social">
+                                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 tp_has_fade_anim" data-fade-from="left" data-delay=".8">
+                                    <div class="h5_footer-widget mb-35">
+                                        <h5 class="h5_footer-widget-title">Company</h5>
+                                        <ul>
+                                            <li><a href="index-2.html">Home</a></li>
+                                            <li><a href="about.html">About Us</a></li>
+                                           
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 d-flex justify-content-lg-center justify-content-xl-start order-sm-3 order-md-2 tp_has_fade_anim" data-fade-from="left" data-delay="1.1">
+                                    <div class="h5_footer-widget mb-35">
+                                        <h5 class="h5_footer-widget-title">Use Cases</h5>
+                                        <ul>
+                                            <li><a href="#">For Company</a></li>
+                                            <li><a href="#">For Social Managers</a></li>
+                                            <li><a href="#">For Web Developers</a></li>
+                                            <li><a href="#">For Freelancers</a></li>
+                                            <li><a href="#">For Job Seekers</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h5_footer-bottom ">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-xl-6 col-md-6">
+                                    <div class="h5_footer-bottom-copyright d-flex justify-content-center justify-content-md-start">
+                                        <p>&copy; <span id="currentYear"></span> Pally.Bot All Rights Reserved by site</p>
+                                        <script>
+                                            document.getElementById('currentYear').textContent = new Date().getFullYear();
+                                        </script>
+                                        
+                                    </div>
+                                </div>
+                           
+                            </div>
+                        </div>
+                    </div>
+                </footer> -->
+                <!-- footer area end -->
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery Js -->
+    <script>
+          document.getElementById('showInput').addEventListener('click', function() {
+            document.getElementById('cvInput').click();
+          });
+    //       setTimeout(() => {
+    //   document.querySelector('.loader').style.display = 'none';
+    // }, 10000);
+        </script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script> 
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/meanmenu.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/chroma.min.js"></script>
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <script src="assets/js/nice-select.min.js"></script>
+    <script src="assets/js/backtotop.js"></script>
+    <script src="assets/js/main.js"></script>
+ 
+  </body>
+</html>
